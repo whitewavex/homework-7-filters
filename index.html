@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>BgFxPlug</title>
+	<link rel="stylesheet" href="bgFxPlug.css">
+
+	<style>
+		body{
+			margin: 0;
+		}
+		section{
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+  			position: relative;
+  			z-index: 1;
+            overflow: hidden;
+		}
+		#bgFxPlug{
+			height: 80%;
+			width: 80%;
+			background-color: #000;
+			
+			-webkit-background-size: cover;
+			background-size: cover;
+		}
+        section img {
+            float: left;
+            margin: 15px;
+            border: 5px solid white;
+        }
+        
+        section p {
+            font-size: 20px;
+            margin: 15px;
+            color: white;
+        }
+
+	</style>
+</head>
+<body>
+	
+	<section>
+		<div id="bgFxPlug">
+		    <img src="img/sea.jpg">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore impedit rem placeat architecto, deserunt nihil quis tempora facere. Aliquam non numquam deleniti iusto dolore accusantium, veniam, tenetur recusandae obcaecati modi! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore impedit rem placeat architecto, deserunt nihil quis tempora facere. Aliquam non numquam deleniti iusto dolore accusantium, veniam, tenetur recusandae obcaecati modi!</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore impedit rem placeat architecto, deserunt nihil quis tempora facere. Aliquam non numquam deleniti iusto dolore accusantium, veniam, tenetur recusandae obcaecati modi! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore impedit rem placeat architecto, deserunt nihil quis tempora facere. Aliquam non numquam deleniti iusto dolore accusantium, veniam, tenetur recusandae obcaecati modi!</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore impedit rem placeat architecto, deserunt nihil quis tempora facere. Aliquam non numquam deleniti iusto dolore accusantium, veniam, tenetur recusandae obcaecati modi! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore impedit rem placeat architecto, deserunt nihil quis tempora facere. Aliquam non numquam deleniti iusto dolore accusantium, veniam, tenetur recusandae obcaecati modi!</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore impedit rem placeat architecto, deserunt nihil quis tempora facere. Aliquam non numquam deleniti iusto dolore accusantium, veniam, tenetur recusandae obcaecati modi! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore impedit rem placeat architecto, deserunt nihil quis tempora facere. Aliquam non numquam deleniti iusto dolore accusantium, veniam, tenetur recusandae obcaecati modi!</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore impedit rem placeat architecto, deserunt nihil quis tempora facere. Aliquam non numquam deleniti iusto dolore accusantium, veniam, tenetur recusandae obcaecati modi! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore impedit rem placeat architecto, deserunt nihil quis tempora facere. Aliquam non numquam deleniti iusto dolore accusantium, veniam, tenetur recusandae obcaecati modi!</p>
+		</div>
+	</section>
+	
+	<script src="../jquery-2.1.4.min.js"></script>
+	<script src="jquery.bgFxPlug.js"></script>
+	<script>
+		$('#bgFxPlug').bgFxPlug({filter: 'sepia', value: 1});
+	</script>
+</body>
+</html>
